@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  * main - print if assigned a random number to the variable n
  *
@@ -9,6 +10,7 @@
  * Return: 0
  */
 int main(void)
+
 {
 int n;
 int 1;
