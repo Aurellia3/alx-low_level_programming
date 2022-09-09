@@ -4,7 +4,7 @@
  * Return: 0 if success
  */
 int main(void)
-{ 
+{
 	puts("\"Programming is like building a mutlilingual puzzle");
-	return (0);
+		return (0);
 }
