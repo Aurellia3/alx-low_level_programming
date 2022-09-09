@@ -2,20 +2,20 @@
 /**
  * main - prints the size of various types
  * Description : using the main function
+ * this program prints the size of various types on the computer it is compiled
  * Return 0
  */
 int main(void)
 {
-	char c;
-	int i;
-	long li;
-	long long lli;
-	float f;
-
-	printf("Size of a char: %d byte(s)\n", sizeof(c));
-	ptintf("Size of an int: %d byte(s)\n", sizeof(i));
-	printf("Size of a long int: %d byte(s)\n", sizeof(li));
-	printf("Size of a long long int: %d byte(s)\n", sizeof(lli));
-	printf("Size of a float: %d byte(s)\n,", sizeof(f));
-	return(0);
+	int charSize = sizeof(char);
+		int intSize = sizeof(int);
+			int longSize = sizeof(long int);
+				int longlongSize = sizeof(long long int);
+					int floatSize = sizeof(float);
+						printf("Size of a char: %d byte(s)\n", charSize);
+							printf("Size of an int: %d byte(s)\n", intSize);
+								printf("Size of a long int: %d byte(s)\n", longSize);
+									printf("Size of a long long int: %d byte(s)\n", longlongSize);
+										printf("Size of a float: %d byte(s)\n", floatSize);
+											return (0);
 }
