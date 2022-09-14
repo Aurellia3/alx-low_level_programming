@@ -2,6 +2,7 @@
 
 /**
  * main -print putchar
+ * desciption: prints putchar followed by a new line
  * Return; Always 0
  */
 
