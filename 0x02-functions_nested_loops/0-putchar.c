@@ -2,10 +2,11 @@
 
 /**
  * main -print putchar
- * desciption: prints putchar followed by a new line
+ *
+ * Desciption: using the main function
+ * this program prints putchar then followed by a new line
  * Return; Always 0
  */
-
 int main(void)
 {
 	_putchar('_');
