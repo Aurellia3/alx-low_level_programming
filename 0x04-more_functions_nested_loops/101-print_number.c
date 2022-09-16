@@ -34,7 +34,7 @@ void print_number(int n)
 		r = r / 10;
 		ct--;
 	}
-	while ( ct != 0)
+	while (ct != 0)
 	{
 		_putchar('0');
 			ct--;
