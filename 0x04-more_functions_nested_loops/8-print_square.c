@@ -7,26 +7,16 @@
  * Return: returns nothing
  */
 
-void print_sqaure(int size)
+void print_square(int size)
 {
-	int inc1, inc2;
+	int x, y;
 
-	if (size > 0)
+	for (y = 0; y < size; y++)
 	{
-		for (inc1 = 0; inc1 < size; inc1++)
-		{
-			for (inc2 = 0; inc2 < (size - 1); inc2++)
-			{
-				putchar('#');
-			}
-
-			putchar('#');
-			putchar('\n');
-		}
+		for (x = 0; x < size; x++)
+			_putchar('#');
+		_putchar('\n');
 	}
-	else
-	{
-		putchar('\n');
-
-	}
+	if (size < 1)
+		_putchar('\n');
 }
