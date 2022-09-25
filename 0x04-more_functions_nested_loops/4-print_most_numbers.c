@@ -8,16 +8,15 @@
  * Return: returns nothing
  */
 
-void print_most_number(void)
+void print_most_numbers(void)
 {
-	int n;
+	char i;
 
-	for (n = 48; n < 58; n++)
+	for (i = '0'; i < '9'; i++)
 	{
-		if ((n == 50) || (n == 52))
-		{
-			conitnue;
-		}
-		putchar(n);
+		if ((i == '2') || (i == '4'))
+			i++;
+		_putchar(i);
 	}
+	_putchar('\n');
 }
