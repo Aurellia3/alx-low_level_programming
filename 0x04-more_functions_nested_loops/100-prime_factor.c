@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,23 +9,23 @@
  */
 int main(void)
 {
-	long number = 612852475143;
-	int inc;
+	long int max, lower, test;
 
-	while (inc++ < number / 2)
-	{
-	if (number % inc == 0)
-	{
-		number /= 2;
-		continue;
-	}
+	max = 612852475143;
+	lower = 2;
+	test = 2;
 
-	for (inc = 3; inc < number / 2; inc += 2)
+	while (max > test)
 	{
-		if (number % inc == 0)
-			number /= inc;
+		if (max % test == 0)
+		{
+			lower = test;
+			max = max / lower;
+			test = lower + 1;
+		}
+		else
+			test++;
 	}
-	}
-	printf("%1d\n", number);
+	printf("%1d\n", max);
 	return (0);
 }
