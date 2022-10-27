@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _r - reallocates memory for an array of pointers
@@ -10,7 +11,7 @@
  *
  * Return: pointer to the new list
  */
-const listint_t **_r(const listint_t **list, size_t size, const listint_t, *new)
+const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 {
 	const listint_t **newlist;
 	size_t i;
@@ -24,7 +25,7 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t, *new)
 	for (i = 0; i < size - 1; i++)
 		newlist[i] = list[i];
 	newlist[i] = new;
-	fre(list);
+	free(list);
 	return (newlist);
 }
 
